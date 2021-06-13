@@ -1,0 +1,92 @@
+.home {
+    display: flex;
+    background: url("../images/homeBg.jpg") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    min-width: 525px;
+    color: navajowhite;
+    min-height: 500px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.home>.max-width {
+    margin: auto 0 auto 0;
+}
+
+.home>.max-width>.home-content {
+    background-color: rgba(84, 15, 27, 0.75);
+    padding: 5px 10px;
+    min-width: 250px;
+    min-height: 150px;
+}
+
+.home>.max-width>.home-content>.text-1{
+    font-size: 25px;
+}
+.home>.max-width>.home-content>.text-2{
+    font-size: 55px;
+    font-weight:600;
+    margin-left: -5px;
+}
+.home>.max-width>.home-content>.text-3{
+    font-size: 35px;
+    margin: 5px 0;
+}
+
+.home>.max-width>.home-content>.text-3>span{
+    color: crimson
+}
+
+.home>.pic-area {
+    margin: auto 25px auto 0;
+    border-radius:5px;
+    width: 30vw;
+    height: 20vw;
+    background: url("../images/pic-me.jpg") no-repeat center;
+    background-size: cover;
+    min-width: 150px;
+    min-height: 200px;
+}
+
+/* responsive media quaries*/
+
+@media (max-width: 800px) {
+    .home>.max-width {
+        margin: auto 0 auto 0;
+    }
+
+    .home > .max-width > .home-content > .text-1 {
+        font-size: 20px;
+    }
+    .home > .max-width > .home-content > .text-2 {
+        font-size: 44px;
+    }
+    .home > .max-width > .home-content > .text-3 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 605px) {
+
+    .home > .max-width > .home-content > .text-1 {
+        font-size: 15px;
+    }
+    .home > .max-width > .home-content > .text-2 {
+        font-size: 33px;
+    }
+    .home > .max-width > .home-content > .text-3 {
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 515px) {
+    .home > .max-width > .home-content > .text-1 {
+        font-size: 13px;
+    }
+    .home > .max-width > .home-content > .text-2 {
+        font-size: 30px;
+    }
+    .home > .max-width > .home-content > .text-3 {
+        font-size: 19px;
+    }
+}

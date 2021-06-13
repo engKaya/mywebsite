@@ -1,0 +1,134 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 30px 0;
+    transition: all 0.5s ease;
+}
+
+.navbar.sticky{
+    background: crimson;
+    padding: 15px 0;
+}
+
+.navbar.sticky> .max-width > .logo > a > span{
+    color: wheat;
+}
+
+.navbar> .max-width > .logo > a{
+    color: wheat;
+    font-size: 35px;
+    font-weight: 600;
+    transition: color .5s ease;
+}
+.navbar> .max-width > .logo > a > span {
+    color: crimson;
+    transition: all 0.5s ease;
+}
+
+.navbar> .max-width > .logo>a:hover {
+    color: crimson;
+}
+
+.navbar.sticky > .max-width > .logo>a:hover > span {
+    color: #5E091A;
+}
+.navbar.sticky > .max-width > .logo>a:hover {
+    color: #5E091A;
+}
+
+
+.navbar > .max-width > .menu > li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 7px;
+}
+.navbar > .max-width > .menu > li > a {
+    color: wheat;
+    font-weight: 400;
+    transition: color 0.3s ease, font-size 0.3s ease
+
+}
+
+.navbar > .max-width > .menu > li > a:hover {
+    color:crimson;
+    font-size: 22px ;
+}
+
+.navbar.sticky > .max-width > .menu > li > a:hover {
+    color:#5E091A;
+    font-size: 22px;
+    font-weight: 700 ;
+}
+
+.navbar> .max-width> .logo > a {
+    color: wheat;
+}
+
+.navbar > .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-btn {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    transition: all 0.5s ease;
+}
+
+/* responsive quaries */
+
+@media (max-width: 800px) {
+    .navbar .menu {
+        position: fixed;
+        list-style-type: none;
+        background: #3b3b3b;
+        height: 100vh;
+        width: 100%;
+        left:0;
+        top:-103%;
+        text-align: center;
+        padding-top: 80px;
+        transition: top .7s ease;
+    }
+
+    .navbar .menu.active{
+        top:0
+    }
+
+    .menu-btn {
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+        display: block;
+        z-index: 99;
+        margin-right: 50px;
+    }
+
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+
+
+    .navbar > .max-width > .menu > li {
+        display: block;
+        margin:60px 0;
+    }
+    .navbar .menu .li a{
+        display:inline-block;
+    }
+    .navbar > .max-width > .menu > li > a:hover{
+        color: white;
+        font-size: 22px;
+        font-weight: 400 ;
+    }
+
+    .navbar.sticky > .max-width > .menu > li > a:hover {
+        color: white;
+        font-size: 22px;
+        font-weight: 400 ;
+    }
+}
