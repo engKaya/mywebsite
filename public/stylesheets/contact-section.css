@@ -1,0 +1,48 @@
+#contact{
+    padding:65px 5px;
+    z-index:1;
+    background: #3b3b3b;
+    font-family: 'Poppins', sans-serif;
+    min-width: 525px;
+}
+
+#contact .title {
+    color: white;
+}
+
+#contact .title:before{
+    background: white;
+    width: 50%;
+    border-radius:48%;
+    min-width: 400px;
+    top: 45px;
+}
+
+#contact .title:after{
+    content: "";
+    background: #3b3b3b;
+}
+.contact .contact-icons > * {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    font-size: 50px;
+    transition: all .5s ease;
+}
+
+.contact .contact-icons > *:hover{
+    color: #1A1A1A;
+}
+
+.contact .contact-icons {
+    text-align: center;
+    background: #585858;
+    padding: 5px 0;
+}
+
+@media (max-width:600px){
+    .contact .contact-icons > *{
+        font-size: 25px;
+        margin:0 5px;
+    }
+}

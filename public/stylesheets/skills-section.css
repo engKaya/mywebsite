@@ -1,0 +1,99 @@
+#skills{
+    padding:65px 5px;
+    z-index:1;
+    background: navajowhite;
+    font-family: 'Poppins', sans-serif;
+}
+
+#skills .title::after {
+    content: "";
+    background:  navajowhite;
+}
+#skills .title::before {
+    width: 25%;
+    min-width: 200px;
+    top: 45px;
+}
+
+.skills {
+    font-family: 'Poppins', sans-serif;
+    min-width: 525px;
+}
+
+.skills .skills-content {
+    display:flex;
+}
+
+.skills .skills-content .column {
+    width: calc(50% - 33px);
+    text-align: justify;
+    padding: 0 5px;
+}
+
+.skills .skills-content .right {
+    padding-left:15px;
+}
+
+
+.skills .skills-content .right .bars {
+    margin-bottom: 5px;
+}
+.skills .skills-content .right .info {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .skills-content .right span {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.skills .skills-content .right .line {
+    height: 5px;
+    position: relative;
+    width: 100%;
+    background: #c8c8c8;
+    border-radius: 5px;
+}
+
+.skills .skills-content .right .line .percent{
+    position: absolute;
+    border-radius: 5px;
+    height: 100%;
+    width:0;
+    top: 0;
+    left: 0;
+    background: crimson;
+    transition: width 0.5s ease;
+}
+
+@media (max-width: 600px) {
+
+    .skills .max-width .title {
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+    }
+
+
+    .skills .skills-content {
+        display: block;
+    }
+
+    .column.left .text {
+        text-align: center
+    }
+
+    .skills .skills-content .column {
+        width: 100%
+    }
+
+    .skills .skills-content .column.left {
+        padding: 0;
+    }
+
+    .skills .skills-content .column.right {
+        padding: 15px 0 5px 0;
+    }
+
+}
